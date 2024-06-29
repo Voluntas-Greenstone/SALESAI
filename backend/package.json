@@ -1,0 +1,20 @@
+{
+    "name": "sales-ai-backend",
+    "version": "1.0.0",
+    "description": "Backend for Sales AI application",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "test": "jest"
+    },
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "mongoose": "^5.13.7"
+    },
+    "devDependencies": {
+      "jest": "^27.0.6",
+      "supertest": "^6.1.6"
+    }
+  }
+  
