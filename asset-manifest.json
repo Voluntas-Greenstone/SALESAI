@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SALESAI/static/css/main.744bbd94.css",
-    "main.js": "/SALESAI/static/js/main.6036f129.js",
+    "main.js": "/SALESAI/static/js/main.650bae41.js",
     "static/js/488.7783131f.chunk.js": "/SALESAI/static/js/488.7783131f.chunk.js",
     "index.html": "/SALESAI/index.html",
     "main.744bbd94.css.map": "/SALESAI/static/css/main.744bbd94.css.map",
-    "main.6036f129.js.map": "/SALESAI/static/js/main.6036f129.js.map",
+    "main.650bae41.js.map": "/SALESAI/static/js/main.650bae41.js.map",
     "488.7783131f.chunk.js.map": "/SALESAI/static/js/488.7783131f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.744bbd94.css",
-    "static/js/main.6036f129.js"
+    "static/js/main.650bae41.js"
   ]
 }
