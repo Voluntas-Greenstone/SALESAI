@@ -1,5 +1,10 @@
-// File: controllers/vendorController.js
 const Vendor = require('../models/Vendor'); // Corrected path
+
+// Utility function for error handling
+const handleError = (res, error, message = 'Internal Server Error') => {
+  console.error(message, error);
+  res.status(500).json({ error: message });
+};
 
 // Get all vendors
 exports.getAllVendors = async (req, res) => {
@@ -7,8 +12,7 @@ exports.getAllVendors = async (req, res) => {
     const vendors = await Vendor.find().sort({ createdAt: -1 });
     res.json(vendors);
   } catch (err) {
-    console.error('Error fetching vendors:', err);
-    res.status(500).json({ error: 'Internal Server Error' });
+    handleError(res, err, 'Error fetching vendors');
   }
 };
 
@@ -21,8 +25,7 @@ exports.getVendorById = async (req, res) => {
     }
     res.json(vendor);
   } catch (err) {
-    console.error('Error fetching vendor:', err);
-    res.status(500).json({ error: 'Internal Server Error' });
+    handleError(res, err, 'Error fetching vendor');
   }
 };
 
@@ -33,8 +36,7 @@ exports.createVendor = async (req, res) => {
     await newVendor.save();
     res.status(201).json(newVendor);
   } catch (err) {
-    console.error('Error creating vendor:', err);
-    res.status(500).json({ error: 'Internal Server Error' });
+    handleError(res, err, 'Error creating vendor');
   }
 };
 
@@ -50,8 +52,7 @@ exports.updateVendor = async (req, res) => {
     }
     res.json(updatedVendor);
   } catch (err) {
-    console.error('Error updating vendor:', err);
-    res.status(500).json({ error: 'Internal Server Error' });
+    handleError(res, err, 'Error updating vendor');
   }
 };
 
@@ -64,7 +65,6 @@ exports.deleteVendor = async (req, res) => {
     }
     res.json({ message: 'Vendor deleted successfully' });
   } catch (err) {
-    console.error('Error deleting vendor:', err);
-    res.status(500).json({ error: 'Internal Server Error' });
+    handleError(res, err, 'Error deleting vendor');
   }
 };
