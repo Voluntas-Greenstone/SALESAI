@@ -4,7 +4,7 @@
     "description": "Sales AI application",
     "main": "server.js",
     "private": true,
-    "homepage": "https://TutukakaCoder.github.io/sales-ai",
+    "homepage": "https://TutukakaCoder.github.io/sales-ai/",
     "scripts": {
       "start": "node server.js",
       "test": "jest",
