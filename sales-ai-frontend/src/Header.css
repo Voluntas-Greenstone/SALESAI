@@ -1,0 +1,40 @@
+/* Header styling */
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1f1f1f 0%, #3c3c3c 100%);
+    padding: 20px 40px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo styling */
+  .Header-logo img {
+    height: 50px;
+  }
+  
+  /* Navigation styling */
+  .Header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Header-nav li {
+    margin: 0;
+  }
+  
+  .Header-nav a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  .Header-nav a:hover {
+    color: #21a1f1;
+  }
+  /* Test comment */

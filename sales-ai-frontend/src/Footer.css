@@ -1,0 +1,36 @@
+/* Footer styling */
+.Footer {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .Footer-nav li {
+    margin: 0;
+  }
+  
+  .Footer-nav a {
+    color: #61dafb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .Footer-nav a:hover {
+    color: #21a1f1;
+  }
+  
+/* Test comment */
