@@ -4,7 +4,7 @@
     "description": "Sales AI application",
     "main": "server.js",
     "private": true,
-    "homepage": "https://voluntas-greenstone.github.io/SALESAI/",
+    "homepage": "https://TutukakaCoder.github.io/sales-ai",
     "scripts": {
       "start": "node server.js",
       "test": "jest",
@@ -55,4 +55,4 @@
       "npm": "10.x"
     }
   }
-
+  
